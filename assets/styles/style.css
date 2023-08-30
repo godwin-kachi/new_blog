@@ -11,9 +11,185 @@
     --mid-gray: #d7d7d7;
     --color-black: #000;
     --color-blue: #3b6996;
-    --light-blue: #1183d6;
+    --light-blue: #82a0b5;
     --mid-black: #090909;
+    --light-green:#0eb;
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* This body style is to remove the overflow in mobile screen */
+body{
+    overflow-x: hidden;
+}
+
+/* CONTACT PAGE */
+.form #submit {
+    width: 100% !important;
+}
+
+.contact_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.contact_header, .location, .phone, .info, .time {
+    margin: 1.5rem;
+}
+
+.contact_container .address {
+    width: 30%;
+    background-color: var(--light-blue);
+    padding: 10px;
+}
+
+.contact_container .contact_form {
+    width: 70%;
+}
+
+.form > .form_group > .generic {
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    width: 100%;
+    margin-left: .25rem;
+    font-size: 2rem;
+    outline: none;
+}
+
+#message {
+    margin-left: .25rem;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.25rem;
+}
+
+
+/* DONATE PAGE */
+
+.mini__modal {
+    width: 60%;
+    margin: auto;
+}
+.submit {
+    width: auto !important;
+    background-color: var(--light-green);
+    outline: none;
+}
+.forms input{
+    width: 100%;
+    margin: .25rem;
+    height: 3rem;
+    /* border-radius: .25rem; */
+    font-size: larger;
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 398px) {
+    .mini__modal{
+        width: 100%;
+        margin: .5rem;
+    }
+
+    .contact_container {
+        width: 100%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .contact_container .address {
+        width: 100%;
+        background-color: var(--light-blue);
+        padding: 10px;
+    }
+    
+    .contact_container .contact_form {
+        width: 100%;
+    }
+    
+}
+
+/* END OF DONATE PAGE */
+
+
+/* .blog {
+    display: none;
+} */
+
+/* LOADER SCREEN */
+.loader {
+    border: 1px solid #eda;
+    position: absolute;
+    top: 250px;
+    left: calc(100vw / 2);
+    display: none;
+}
+
+.copy__ {
+    font-size: 1.2rem !important;
+}
+
+.loader p {
+    font-weight: bolder;
+    font-size: larger;
+    transition:.5sec;
+}
+
+/* END OF LOADER SCREEN */
+.blog {
+    width: 80%;
+    margin: auto;
+}
+
+#article_one, #article_two {
+    display: none;
+}
+
+.read__more__ a {
+    text-decoration: none;
+    color: var(--mid-black);
+}
+
+.source, .read__more__ {
+    border: 1px solid var(--light-blue);
+    background-color: var(--light-blue);
+    color: var(--mid-black);
+    padding: .25rem;
+    border-radius: .25rem;
+}
+
+.ending {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.featured_image img {
+    width: 100%;
+    height: auto;
+}
+
+.blog_read_content p{
+text-align: justify;
+margin-bottom: 15px;
+}
+
+
+.click {
+    border: 1px solid #cde;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #3b6996;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .blog-container {
@@ -156,6 +332,11 @@ nav .nav__right ul li a.nav__link:hover::after {
 section.body__section {
     width: 100%;
     padding-top: 3rem;
+}
+
+.blog__container {
+    width: 80% !important;
+    margin: auto;
 }
 
 .body__section .container {

@@ -22,3 +22,6 @@ hamburger.addEventListener('click', (e) => {
     hamburger.classList.toggle('toggle')
 })
 
+// create a function that handles 
+// the subscribe to newsletter section 
+// below
